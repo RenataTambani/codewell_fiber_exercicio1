@@ -1,0 +1,21 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.introducao-conteudo {
+  display: block;
+}
+.introducao-estrelas,
+.introducao-teste,
+.introducao-vantagens {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero {
+  max-width: 100%;
+  grid-column: 2;
+}
