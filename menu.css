@@ -1,6 +1,8 @@
 .menu-informacoes,
-.menu-login {
+.menu-login,
+.menu-marca {
   display: flex;
+  margin-top: 30px;
 }
 
 nav {
@@ -12,6 +14,8 @@ nav {
 }
 a {
   text-decoration: none;
+  color: #323130;
+  font-weight: 500;
 }
 li {
   list-style: none;

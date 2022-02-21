@@ -11,22 +11,8 @@ body {
   font-weight: 200;
 }
 
-nav {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  align-items: center;
-  text-align: center;
-  justify-items: center;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-  padding: 10px;
-}
 .bg1 {
-  background-color: rgb(247, 244, 243);
+  background-color: #fbf8f2;
 }
 
 .bg2 {
@@ -34,13 +20,33 @@ li {
 }
 
 .botao {
-  background-color: rgb(49, 15, 240);
+  margin: 0px;
+  background-color: #4d13d1;
   border: none;
   padding: 10px;
   border-radius: 4px;
   color: #ffffff;
 }
-
+.botao-2 {
+  margin: 0px;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: #4d13d1;
+}
 .botao:hover {
-  background-color: rgb(99, 76, 231);
+  background-color: #4d13d1;
+}
+
+p,
+h1,
+h2,
+h3,
+a,
+img,
+li,
+ul {
+  margin: 0px;
+  padding: 0px;
 }
