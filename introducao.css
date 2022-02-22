@@ -1,9 +1,15 @@
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 80px 80px;
+  padding: 40px 80px;
+  align-items: center;
 }
-
+.introducao p {
+  padding: 0px 0px 0px 5px;
+}
+.introducao h3 {
+  font-weight: lighter;
+}
 .introducao-estrelas,
 .introducao-teste,
 .introducao-vantagens {
@@ -11,13 +17,19 @@
   flex: 1;
   align-items: center;
   margin: 0px;
-  padding: 10px 0px;
+  padding: 0px;
 }
 .introducao-titulo h1 {
   margin: 0px;
-  font-size: 40px;
+  font-size: 50px;
 }
 .introducao-link {
+  color: #4d13d1;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.introducao-link:visited {
   color: #4d13d1;
   margin: 20px;
   text-decoration: underline;
@@ -25,4 +37,10 @@
 .hero {
   max-width: 100%;
   grid-column: 2;
+}
+@media (max-width: 800px) {
+  .introducao {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
