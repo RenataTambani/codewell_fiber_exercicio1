@@ -30,5 +30,20 @@ footer a {
 }
 
 footer a:visited {
-  color: #724bcc;
+  color: black;
+}
+@media (max-width: 800px) {
+  .footer-texto {
+    grid-column: 1/-1;
+    padding-bottom: 30px;
+  }
+  .footer-informacoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1;
+    gap: 0px;
+  }
+  .footer-mapa-site {
+    padding-bottom: 10px;
+  }
 }

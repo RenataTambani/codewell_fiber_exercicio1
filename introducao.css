@@ -7,9 +7,7 @@
 .introducao p {
   padding: 0px 0px 0px 5px;
 }
-.introducao h3 {
-  font-weight: lighter;
-}
+
 .introducao-estrelas,
 .introducao-teste,
 .introducao-vantagens {
@@ -19,13 +17,20 @@
   margin: 0px;
   padding: 0px;
 }
+.introducao-estrelas {
+  padding: 20px 0px;
+}
 .introducao-titulo h1 {
-  margin: 0px;
   font-size: 50px;
+  font-weight: 650;
+  padding: 0px 40px 10px 0px;
+}
+.introducao-titulo h3 {
+  font-weight: 500;
+  padding: 0px 40px 0px 0px;
 }
 .introducao-link {
   color: #4d13d1;
-  margin: 20px;
   text-decoration: underline;
 }
 
@@ -42,5 +47,9 @@
   .introducao {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .hero {
+    max-width: 400px;
+    grid-row: 1;
   }
 }

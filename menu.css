@@ -9,6 +9,7 @@ nav {
 .menu-informacoes,
 .menu-login,
 .menu-marca {
+  align-items: center;
   display: flex;
   margin-top: 30px;
   border-top: 0px;
@@ -19,9 +20,7 @@ nav {
 .menu-login {
   justify-self: end;
 }
-nav .menu {
-  margin-top: 0px;
-}
+
 nav a {
   text-decoration: none;
   color: #323130;
@@ -35,19 +34,22 @@ li {
 
 @media (max-width: 800px) {
   nav {
-    display: flex;
-  }
-}
-
-@media (max-width: 800px) {
-  nav {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: start;
     padding: 0px 80px;
   }
+  .menu-marca {
+    align-items: center;
+  }
+  .menu-informacoes {
+    grid-column: 1;
+  }
   .menu-login {
     justify-self: start;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
   }
   li {
     padding: 0px 10px 10px 0px;
